@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qaU-d3-7Cf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="HackerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="132"/>
+        </scene>
+        <!--Hacking View Controller-->
+        <scene sceneID="q2u-Fy-vW3">
+            <objects>
+                <viewController id="qaU-d3-7Cf" customClass="HackingViewController" customModule="HackerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="efl-QP-ywF"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Vu-76-g06"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cRm-v3-LM6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDo-cA-owQ">
+                                <rect key="frame" x="16" y="20" width="343" height="452"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.15686274509803921" blue="0.13333333333333333" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gk9-A9-B40">
+                                <rect key="frame" x="10" y="482" width="355" height="175"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ea9-B9-wJA">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="36.5"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN0-YZ-a61">
+                                                <rect key="frame" x="0.0" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="Q">
+                                                    <color key="titleColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zid-ii-A8T">
+                                                <rect key="frame" x="36.5" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="W"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28R-fv-xuD">
+                                                <rect key="frame" x="73" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="E"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80b-wL-arV">
+                                                <rect key="frame" x="109.5" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="R"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVt-xA-j2k">
+                                                <rect key="frame" x="146" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="T"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdl-Vf-OTP">
+                                                <rect key="frame" x="182.5" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="Y"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2e1-kT-enS">
+                                                <rect key="frame" x="219" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="U"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPa-Ml-rs4">
+                                                <rect key="frame" x="255.5" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="I"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSz-YY-Dfq">
+                                                <rect key="frame" x="292" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="O"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kz5-Y6-s6D">
+                                                <rect key="frame" x="328.5" y="0.0" width="26.5" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="P"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="355" id="4JS-sG-wGx"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JQc-9b-3wS">
+                                        <rect key="frame" x="18.5" y="46.5" width="318.5" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5F-vl-lsk">
+                                                <rect key="frame" x="0.0" y="0.0" width="26.5" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="Kzr-GM-Ocn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="A"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVY-vU-gMR">
+                                                <rect key="frame" x="36.5" y="0.0" width="26.5" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="Re9-cU-udX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="S"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18c-PO-uFj">
+                                                <rect key="frame" x="73" y="0.0" width="26.5" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="3B4-QG-zVS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="D"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oof-9a-ogB">
+                                                <rect key="frame" x="109.5" y="0.0" width="26.5" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="o1W-vZ-EKF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="F"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csE-mg-jEU">
+                                                <rect key="frame" x="146" y="0.0" width="26.5" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="Iq8-6T-MXt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="G"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIT-6B-ygT">
+                                                <rect key="frame" x="182.5" y="0.0" width="26.5" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="3Dr-gp-DTR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="H"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbv-Pc-qPA">
+                                                <rect key="frame" x="219" y="0.0" width="26.5" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="MN0-O2-zoY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="J"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="063-ru-8XV">
+                                                <rect key="frame" x="255.5" y="0.0" width="26.5" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="so8-nA-Gz5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="K"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OP-kK-Ztb">
+                                                <rect key="frame" x="292" y="0.0" width="26.5" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="6My-7o-Vl5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="L"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rIK-yE-wc2">
+                                        <rect key="frame" x="55" y="92.5" width="245.5" height="36.5"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-HF-tVm">
+                                                <rect key="frame" x="0.0" y="0.0" width="26.5" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="bJl-dB-Cx0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="Z"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2S-Gc-jCL">
+                                                <rect key="frame" x="36.5" y="0.0" width="26.5" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="leT-Or-tnV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="X"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP6-s1-Q3E">
+                                                <rect key="frame" x="73" y="0.0" width="26.5" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="Fx0-2f-ggz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="C"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXW-6Z-ng3">
+                                                <rect key="frame" x="109.5" y="0.0" width="26.5" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="i8p-si-78c"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="V"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtQ-6w-rVg">
+                                                <rect key="frame" x="146" y="0.0" width="26.5" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="zri-co-V1Q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="B"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCB-Zi-FAD">
+                                                <rect key="frame" x="182.5" y="0.0" width="26.5" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="0fT-pS-5mS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="N"/>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zq-Gt-ApV">
+                                                <rect key="frame" x="219" y="0.0" width="26.5" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26.5" id="PaJ-2h-Zf1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="M"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZF-Yp-XJ7">
+                                        <rect key="frame" x="0.0" y="139" width="355" height="36"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f3M-x6-eEv">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="36"/>
+                                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="hMk-16-BvF"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N1R-2t-WnD">
+                                <rect key="frame" x="305" y="269" width="2" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.15686274509803921" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Gk9-A9-B40" secondAttribute="bottom" constant="10" id="2BP-B7-isz"/>
+                            <constraint firstItem="Gk9-A9-B40" firstAttribute="top" secondItem="yDo-cA-owQ" secondAttribute="bottom" constant="10" id="GF2-8P-FHW"/>
+                            <constraint firstItem="Gk9-A9-B40" firstAttribute="leading" secondItem="cRm-v3-LM6" secondAttribute="leading" constant="10" id="fjm-AY-Asw"/>
+                            <constraint firstAttribute="trailing" secondItem="Gk9-A9-B40" secondAttribute="trailing" constant="10" id="gYb-nd-cPF"/>
+                            <constraint firstItem="yDo-cA-owQ" firstAttribute="top" secondItem="efl-QP-ywF" secondAttribute="bottom" id="hRw-ae-xcQ"/>
+                            <constraint firstItem="yDo-cA-owQ" firstAttribute="trailing" secondItem="cRm-v3-LM6" secondAttribute="trailingMargin" id="lFf-hw-7XG"/>
+                            <constraint firstItem="yDo-cA-owQ" firstAttribute="leading" secondItem="cRm-v3-LM6" secondAttribute="leadingMargin" id="m1S-f0-oag"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="EQl-Qq-LvX" appends="YES" id="6Tn-w5-kkS"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="codeTextView" destination="yDo-cA-owQ" id="HZy-84-qMB"/>
+                        <outlet property="cursor" destination="N1R-2t-WnD" id="NEq-if-vGN"/>
+                        <outlet property="keyboardStack" destination="Gk9-A9-B40" id="atv-b7-45e"/>
+                        <outlet property="topRowStack" destination="Ea9-B9-wJA" id="fNp-rw-3nd"/>
+                        <outletCollection property="collectionOfButtons" destination="aPa-Ml-rs4" collectionClass="NSMutableArray" id="xGS-h1-7mD"/>
+                        <outletCollection property="collectionOfButtons" destination="wSz-YY-Dfq" collectionClass="NSMutableArray" id="hSe-ZA-y5J"/>
+                        <outletCollection property="collectionOfButtons" destination="28R-fv-xuD" collectionClass="NSMutableArray" id="wQZ-48-2lR"/>
+                        <outletCollection property="collectionOfButtons" destination="hN0-YZ-a61" collectionClass="NSMutableArray" id="nfY-Sa-aUl"/>
+                        <outletCollection property="collectionOfButtons" destination="2e1-kT-enS" collectionClass="NSMutableArray" id="bQH-0I-Phu"/>
+                        <outletCollection property="collectionOfButtons" destination="80b-wL-arV" collectionClass="NSMutableArray" id="eDt-Fk-crE"/>
+                        <outletCollection property="collectionOfButtons" destination="Kz5-Y6-s6D" collectionClass="NSMutableArray" id="Elr-En-dTm"/>
+                        <outletCollection property="collectionOfButtons" destination="zid-ii-A8T" collectionClass="NSMutableArray" id="Qna-px-BOR"/>
+                        <outletCollection property="collectionOfButtons" destination="Sdl-Vf-OTP" collectionClass="NSMutableArray" id="Q38-Jk-Etd"/>
+                        <outletCollection property="collectionOfButtons" destination="RVt-xA-j2k" collectionClass="NSMutableArray" id="Yme-si-P49"/>
+                        <outletCollection property="collectionOfButtons" destination="q5F-vl-lsk" collectionClass="NSMutableArray" id="mAE-fa-VHs"/>
+                        <outletCollection property="collectionOfButtons" destination="WVY-vU-gMR" collectionClass="NSMutableArray" id="5NK-lg-1c0"/>
+                        <outletCollection property="collectionOfButtons" destination="18c-PO-uFj" collectionClass="NSMutableArray" id="Zcd-Tq-zAj"/>
+                        <outletCollection property="collectionOfButtons" destination="Oof-9a-ogB" collectionClass="NSMutableArray" id="1Xi-Gh-rZu"/>
+                        <outletCollection property="collectionOfButtons" destination="csE-mg-jEU" collectionClass="NSMutableArray" id="Doq-hM-iWz"/>
+                        <outletCollection property="collectionOfButtons" destination="kIT-6B-ygT" collectionClass="NSMutableArray" id="TSs-xb-fEj"/>
+                        <outletCollection property="collectionOfButtons" destination="qbv-Pc-qPA" collectionClass="NSMutableArray" id="vqm-Gy-OHr"/>
+                        <outletCollection property="collectionOfButtons" destination="063-ru-8XV" collectionClass="NSMutableArray" id="1Ic-ao-CRS"/>
+                        <outletCollection property="collectionOfButtons" destination="8OP-kK-Ztb" collectionClass="NSMutableArray" id="4kM-zK-Ts4"/>
+                        <outletCollection property="collectionOfButtons" destination="ADl-HF-tVm" collectionClass="NSMutableArray" id="FMZ-T0-etq"/>
+                        <outletCollection property="collectionOfButtons" destination="s2S-Gc-jCL" collectionClass="NSMutableArray" id="OfS-yb-2R6"/>
+                        <outletCollection property="collectionOfButtons" destination="JP6-s1-Q3E" collectionClass="NSMutableArray" id="8zG-RO-hsk"/>
+                        <outletCollection property="collectionOfButtons" destination="BXW-6Z-ng3" collectionClass="NSMutableArray" id="Ann-fy-p3Z"/>
+                        <outletCollection property="collectionOfButtons" destination="KtQ-6w-rVg" collectionClass="NSMutableArray" id="buc-uj-6L5"/>
+                        <outletCollection property="collectionOfButtons" destination="VCB-Zi-FAD" collectionClass="NSMutableArray" id="jP4-3y-hzV"/>
+                        <outletCollection property="collectionOfButtons" destination="7Zq-Gt-ApV" collectionClass="NSMutableArray" id="jJj-86-bbO"/>
+                        <segue destination="D8j-wa-5JD" kind="custom" identifier="hackToStat" customClass="SegueFromRight" customModule="HackerTest" id="k7y-ae-v4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWV-m7-Mdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="EQl-Qq-LvX">
+                    <connections>
+                        <action selector="swipeRight:" destination="qaU-d3-7Cf" id="f0d-Rp-VWF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="68" y="803.74812593703155"/>
+        </scene>
+        <!--Stat View Controller-->
+        <scene sceneID="aVA-xD-g1Y">
+            <objects>
+                <viewController id="D8j-wa-5JD" customClass="StatViewController" customModule="HackerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iyu-HT-xyH"/>
+                        <viewControllerLayoutGuide type="bottom" id="4yj-vh-hQr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aCN-z9-7Do">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detection Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFu-gE-ypT">
+                                <rect key="frame" x="123" y="28" width="128" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wHh-SO-FgU">
+                                <rect key="frame" x="16" y="330.5" width="343" height="6"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cnZ-H8-BaO">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="6"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="nSl-Jg-rak"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="1" green="0.0" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xVQ-2e-ucS">
+                                        <rect key="frame" x="69" y="0.0" width="67" height="6"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="P6T-d9-Jf7"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.68627450980392157" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ng3-Pk-SPW">
+                                        <rect key="frame" x="138" y="0.0" width="67" height="6"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="LZq-Q7-cJn"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.12156862745098039" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VWI-nC-MR6">
+                                        <rect key="frame" x="207" y="0.0" width="67" height="6"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="nlP-GS-Djo"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.0" green="1" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PjZ-vY-yLt">
+                                        <rect key="frame" x="276" y="0.0" width="67" height="6"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="8CX-I2-soC"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-CN-XIm">
+                                <rect key="frame" x="16" y="56" width="343" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="IvM-jq-MAv"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.15686274509803921" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="s9W-CN-XIm" firstAttribute="leading" secondItem="aCN-z9-7Do" secondAttribute="leadingMargin" id="3Ty-C5-vst"/>
+                            <constraint firstItem="s9W-CN-XIm" firstAttribute="top" secondItem="fFu-gE-ypT" secondAttribute="bottom" constant="8" id="9nc-UO-J7A"/>
+                            <constraint firstItem="fFu-gE-ypT" firstAttribute="centerX" secondItem="aCN-z9-7Do" secondAttribute="centerX" id="BRV-6K-dFV"/>
+                            <constraint firstItem="s9W-CN-XIm" firstAttribute="trailing" secondItem="aCN-z9-7Do" secondAttribute="trailingMargin" id="E7j-kd-C4c"/>
+                            <constraint firstItem="wHh-SO-FgU" firstAttribute="centerY" secondItem="aCN-z9-7Do" secondAttribute="centerY" id="lnU-tx-5WF"/>
+                            <constraint firstItem="fFu-gE-ypT" firstAttribute="top" secondItem="Iyu-HT-xyH" secondAttribute="bottom" constant="8" id="mKl-Pd-7E3"/>
+                            <constraint firstItem="wHh-SO-FgU" firstAttribute="trailing" secondItem="aCN-z9-7Do" secondAttribute="trailingMargin" id="pFP-B3-d02"/>
+                            <constraint firstItem="wHh-SO-FgU" firstAttribute="leading" secondItem="aCN-z9-7Do" secondAttribute="leadingMargin" id="tUL-2A-9qz"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Pdu-X6-mFf" appends="YES" id="Afu-wx-QZm"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="hackStrength1" destination="cnZ-H8-BaO" id="Tfh-Hg-aw8"/>
+                        <outlet property="hackStrength2" destination="xVQ-2e-ucS" id="4py-mo-qrf"/>
+                        <outlet property="hackStrength3" destination="ng3-Pk-SPW" id="Qdu-rN-5zp"/>
+                        <outlet property="hackStrength4" destination="VWI-nC-MR6" id="Qnz-un-wPA"/>
+                        <outlet property="hackStrength5" destination="PjZ-vY-yLt" id="pu1-ls-ql5"/>
+                        <segue destination="qaU-d3-7Cf" kind="custom" identifier="statToHack" customClass="SegueFromLeft" customModule="HackerTest" id="RYs-cu-Bpx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmS-aN-sum" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Pdu-X6-mFf">
+                    <connections>
+                        <action selector="swipeLeft:" destination="D8j-wa-5JD" id="tZX-b4-0Rp"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="803.74812593703155"/>
+        </scene>
+    </scenes>
+</document>
